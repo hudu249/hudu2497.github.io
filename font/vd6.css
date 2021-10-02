@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.tren {
+    width: 582px;
+    height: 40px;
+    border-top: 1px solid lightgray;
+    padding-top: 10px;
+    margin: auto;
+    margin-top: 100px;
+}
+a.xemthem{
+    float: right;
+    margin-top: -29px;
+    color: lightgray;
+    font-style: italic;
+    font-size: 12px;
+}
+.tren a{
+    text-decoration: none;
+    font-family: tahoma;
+}
+a.tdto{
+    text-align: center;
+    display: block;
+    font-size: 18px;
+    color: pink;
+    text-transform: uppercase;
+    background-image: url(h1.jpg);
+    background-repeat: no-repeat;
+    background-position:center bottom ;
+    padding-bottom: 10px;
+}
+.icon{
+    width: 582px;
+    text-align: center;
+    margin: auto;
+
+}
+._1icon{
+    width: 40px;
+    height: 51px;
+    display: inline-block;
+    margin-right: 25px;
+}
+._1icon a.chuaicon{
+    width: 27px;
+    height: 35px;
+    display: inline-block;
+    background-image: url(icon1.jpg);
+    background-repeat: no-repeat;
+    background-position:center top;
+}
+._1icon a.linkicon{
+    text-decoration: none;
+    font-size: 10px;
+    color: gray;
+}
+._1icon:hover a.linkicon{
+    color: blue;
+}
+
+
+.duoi{
+    width: 582px;
+    height: 233px;
+    margin: auto;
+    padding-top: 20px;
+
+}
+._1tin{
+    width: 183px;
+    height: 233px;
+    float: left;
+    margin-right: 16px;
+}
+._1tin:nth-child(3){
+    margin-right:0;
+}
