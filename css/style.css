@@ -17,6 +17,7 @@
 }
 html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 body{
     overflow-x: hidden;
@@ -47,20 +48,19 @@ a{
 header{
     background: linear-gradient(104.48deg, #10A58E 16.66%, #18BCA3 92.24%);
     border-radius: 0px 0px 0px 100px;
-    padding: 0 10rem;
+    padding: 0 6.944%;
     height: 100%;
     position: relative;
 }
+
 .heading{
-    margin:0 auto;
-    max-width: 1240px;
+    width: 100%;
+    padding: 3.9rem 6.94% 2rem 6.94%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    top: 3.9rem;
-    left: 6.94%;
-    right: 6.94%;
+    top:0;
     z-index: 100;
 }
 .heading .nav-bar{
@@ -181,7 +181,8 @@ header{
 .our-section{
     width: 76.46%;
     margin: 0 auto;
-    padding:14.9rem 0 16rem 0;
+    margin-top: 14.9rem;
+    margin-bottom: 16rem;
     text-align: center;
 }
 .our-section h2{
@@ -319,14 +320,15 @@ header{
   .blog-section{
     width: 86.12%;
     margin: 0 auto;
-    padding:20rem 0 8.5rem 0;
+    margin-top: 20rem;
+   margin-bottom: 8.5rem;
   }
   .blog-section h3{
       font-size: 3.8rem;
   }
   .blog-section .blog-item{
       width: 100%;
-      height: 308px;
+      min-height: 308px;
       display: flex;
       background: #FFFFFF;
     box-shadow: 0px 8px 50px rgba(0, 0, 0, 0.05);
@@ -382,8 +384,7 @@ footer{
     display: flex;
     grid-gap: 10rem;
 }
-.footer-main .menu .copyright{
-}
+
 .footer-main .menu .menu-item h4{
     font-size: 2rem;
 line-height: 2.2rem;
@@ -474,7 +475,7 @@ width: 150%;
     .heading .nav-bar .btn{
         font-size: 4rem;
     }
-    .heading .nav-toggle{
+    .nav-toggle{
         left: 0;
     }
     .header-main .left h1{
@@ -495,13 +496,13 @@ width: 150%;
     }
 
     .footer-main .menu .menu-item h4{
-        font-size: 1.5rem;
+        font-size: 1.7rem;
     }
     .footer-main .menu ul li a{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
     .footer-main .copyright p{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         line-height: 2rem;
     }
     .footer-main .copyright .logo2{

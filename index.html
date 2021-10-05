@@ -7,39 +7,43 @@
     <title>Document</title>
     
 
-    <!-- fontawesome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- custom file css link -->
     <link rel="stylesheet" href="css/style.css">
     <!-- Swiper link    -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+<!-- Animate link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<!-- Lazyload -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery_lazyload/1.9.7/jquery.lazyload.min.js">
+    
 </head>
 <body>
+    <div class="heading wow animate__fadeInDown" data-wow-duration="1.5s">
+        <div class="logo">
+            <img src="img/AgencyDev.svg" alt="">
+        </div>
+
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#our">Expertise</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact" class="btn">Contact</a></li>
+            </ul>
+        </nav>
+        <i class="fas fa-bars"></i>
+    </div>
+    
    <header>
-       <div class="heading">
-           <div class="logo">
-               <img src="img/AgencyDev.svg" alt="">
-           </div>
-
-           <nav class="nav-bar">
-               <ul>
-                   <li><a href="">Expertise</a></li>
-                   <li><a href="">Portfolio</a></li>
-                   <li><a href="">Blog</a></li>
-                   <li><a href="" class="btn">Contact</a></li>
-               </ul>
-           </nav>
-           <i class="fas fa-bars"></i>
-       </div>
-
        <div class="header-main">
-           <div class="left">
+           <div class="left wow animate__fadeInLeft" data-wow-duration="1s">
                 <h1>We create impactful
                     digital <span>experiences.</span></h1>
                 <a href="" class="btn">Drop Project</a>
            </div>
 
-           <div class="right">
+           <div class="right wow animate__fadeInRight" data-wow-duration="1s">
                <img src="img/picture1.png" alt="">
            </div>
        </div>
@@ -57,26 +61,26 @@
     </div>
    </header>
 
-   <div class="our-section">
+   <div id="our" class="our-section">
         <h2>Our Expertise</h2>
         <p>AGENCIESDEV has a comprehensive expertise in planning, design, and development combined with popular, robust and reliable technology that fits with your needs. </p>
         <div class="our-main">
-            <div class="main-item item1">
+            <div class="main-item item1 wow animate__fadeInLeft" data-wow-offset="100" data-wow-duration="2s">
                     <img src="img/Group 1027.svg" alt="">
                     <h3>Apps Mobile</h3>        
             </div>
 
-            <div class="main-item item2">
+            <div class="main-item item2 wow animate__fadeInRight" data-wow-offset="100" data-wow-duration="2s">
                     <img src="img/Group 1026.svg" alt="">
                     <h3>Website Apps</h3>
             </div>
 
-            <div class="main-item item3">
+            <div class="main-item item3 wow animate__fadeInLeft" data-wow-offset="100" data-wow-duration="2s">
                     <img src="img/Group 1031.svg" alt="">
                     <h3>Custom CMS</h3>
             </div>
 
-            <div class="main-item item4">
+            <div class="main-item item4 wow animate__fadeInRight" data-wow-offset="100" data-wow-duration="2s">
                     <img src="img/Group 1029.svg" alt="">
                     <h3>Games</h3>
             </div>
@@ -84,7 +88,7 @@
     </div>
 
 
-    <div class="portfolio-section">
+    <div id="portfolio" class="portfolio-section">
         <h2>Portfolio</h2>
         <div class="portfolio-main">
             <p>Design Thinking x Creative Coding. Our experience and technical expertise help you achieve your business goals. Passion, collaboration and accuracy in analyzing are our guiding principles. We aim to unleash the power of software craftsmanship to reach the successful market-product fit for your product and brand</p>
@@ -103,7 +107,7 @@
         </div>
     </div>
 
-    <div class="blog-section">
+    <div id="blog" class="blog-section">
         <h2>Blog</h2>
         <div class="blog-main">
             <div class="blog-item">
@@ -149,7 +153,7 @@
     </div>
 
     <footer>
-        <div class="footer-main">
+        <div id="contact" class="footer-main">
             <div class="menu">
                 <div class="menu-item">
                     <h4>Navigate</h4>
@@ -202,7 +206,11 @@
     <script src="js/main.js"></script>
     <!-- Swiper link -->
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-         
+    <!-- Wowjs link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+              
+    
+ 
     <!-- Initialize Swiper -->
           <script>
             var swiper = new Swiper(".portfolio-slider", {
@@ -214,5 +222,9 @@
         },  
             });
           </script>
+    
+    <script>
+        new WOW().init();
+    </script>
 </body>
 </html>
